@@ -21,6 +21,23 @@ main, footer{
 	padding-top:50px;
 }
 
+/* ------------coloane ------------------*/
+
+	p.text{
+		width:60%;
+		float:left;
+	}
+	figure.img-wrap{
+		width:40%;
+		float:left;
+	}
+
+	figure.img-wrap>img{
+		width:100%;
+		height:auto;
+
+	}
+
 /* MENU */
 nav{
 	width:125%;
@@ -82,3 +99,43 @@ ul.menu>li>a:hover, ul.submenu>li>a:hover{
 ul.menu>li:hover{
 	overflow:visible;
 }
+
+@media screen and (min-width:400px) and (max-width:700px){
+		p.text{
+		float:none;
+		width:100%;
+		}
+		figure.img-wrap{
+		width:100%;
+		}
+
+		ul.menu>li{
+		 width:40%;
+		}
+
+		ul.menu>li:hover ul.submenu{
+			width:200vw;
+			position:absolute;
+			left:0px;
+			top:3.0rem;
+			border-top:2px solid gray;
+			border-bottom:2px solid gray;
+			background:black;
+		}
+
+		ul.menu>li:hover ul.submenu>li{
+			float:left;
+			width:15%;
+			border:none;
+		}
+	}
+	/* ce stil se aplica pentru width-ul ferestrei egal cu 400px? */
+	@media screen and (max-width:400px){
+		p.text{
+		float:none;
+		width:100%;
+		}
+		figure.img-wrap{
+		width:100%;
+		}
+	}
