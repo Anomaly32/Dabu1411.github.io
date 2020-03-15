@@ -1,0 +1,84 @@
+body {
+	background-color:#ffecb3;
+	margin: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	color: #332900;
+	background-color: #cca300;
+}
+
+*{ /* resetarea spatierilor */
+	margin:0px;
+	padding:0px;
+	text-indent:0px;
+}
+
+main, footer{
+	padding-left:10%;
+	padding-right:10%;
+	padding-top:50px;
+}
+
+/* MENU */
+nav{
+	width:125%;
+	position:fixed;
+}
+
+ul.menu>li, ul.menu>li>ul.submenu>li{
+	display:block;
+	font-size:1.25rem;
+	font-weight:bold;
+	height:3.0rem;
+	line-height:3.0rem;
+	text-align:center;
+	list-style-type:none;
+	overflow:hidden;
+}
+
+ul.menu>li{
+	float:left;
+	width:20%;
+}
+
+ul.submenu>li{
+ 	width:100%;
+}
+
+ul.menu>li>a,ul.menu>li>div,ul.submenu>li>a{
+	display:block;
+	height:	100%;
+	text-decoration:none;
+	color:yellow;
+	background:black;
+	transition: background 1s linear;
+}
+
+ul.menu>li>ul.submenu{
+	list-style-type: none;
+	margin: 0;
+  padding: 0;
+	position:relative;
+	top:0px;
+}
+
+ul.menu>li>ul.submenu>li
+{
+	border-top:2px solid gray;
+}
+
+ul.menu>li>ul.submenu>li:last-child
+{
+	border-bottom:2px solid gray;
+}
+
+ul.menu>li>a:hover, ul.submenu>li>a:hover{
+	background:gray;
+	transition: background 0s;
+}
+
+ul.menu>li:hover{
+	overflow:visible;
+}
