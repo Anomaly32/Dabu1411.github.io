@@ -46,7 +46,7 @@ nav{
 
 ul.menu>li, ul.menu>li>ul.submenu>li{
 	display:block;
-	font-size:1.25rem;
+	font-size:1.0rem;
 	font-weight:bold;
 	height:3.0rem;
 	line-height:3.0rem;
@@ -138,4 +138,16 @@ ul.menu>li:hover{
 		figure.img-wrap{
 		width:100%;
 		}
+	}
+
+	img.mica{
+		max-width: 100%;
+		height: auto;
+		max-height: 36vh;
+	}
+
+	img.mare{
+		max-width: 100%;
+		height: auto;
+		max-height: 72vh;
 	}
