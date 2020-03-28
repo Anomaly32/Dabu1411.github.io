@@ -35,12 +35,11 @@ main, footer{
 	figure.img-wrap>img{
 		width:100%;
 		height:auto;
-
 	}
 
 /* MENU */
 nav{
-	width:125%;
+	width:100%;
 	position:fixed;
 }
 
@@ -57,7 +56,7 @@ ul.menu>li, ul.menu>li>ul.submenu>li{
 
 ul.menu>li{
 	float:left;
-	width:20%;
+	width:25%;
 }
 
 ul.submenu>li{
@@ -110,7 +109,7 @@ ul.menu>li:hover{
 		}
 
 		ul.menu>li{
-		 width:40%;
+		 width:50%;
 		}
 
 		ul.menu>li:hover ul.submenu{
@@ -132,11 +131,11 @@ ul.menu>li:hover{
 	/* ce stil se aplica pentru width-ul ferestrei egal cu 400px? */
 	@media screen and (max-width:400px){
 		p.text{
-		float:none;
-		width:100%;
+			float:none;
+			width:100%;
 		}
 		figure.img-wrap{
-		width:100%;
+			width:100%;
 		}
 	}
 
