@@ -1,12 +1,13 @@
 body {
-	background-color:#ffecb3;
-	margin: 0;
+	background-image: url("../../background_pattern/cubes_@2X.png");
 }
 
 h1, h2, h3,
 h4, h5, h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
 	color: #332900;
-	background-color: #cca300;
+	background-color: #84CEEB;
 }
 
 *{ /* resetarea spatierilor */
@@ -19,6 +20,14 @@ main, footer{
 	padding-left:10%;
 	padding-right:10%;
 	padding-top:50px;
+}
+
+html {
+	font-size: 16px;
+}
+
+p ,aside {
+	padding: 15px;
 }
 
 /* ------------coloane ------------------*/
@@ -67,7 +76,7 @@ ul.menu>li>a,ul.menu>li>div,ul.submenu>li>a{
 	display:block;
 	height:	100%;
 	text-decoration:none;
-	color:yellow;
+	color: #5AB9EA;
 	background:black;
 	transition: background 1s linear;
 }
@@ -100,6 +109,9 @@ ul.menu>li:hover{
 }
 
 @media screen and (min-width:400px) and (max-width:700px){
+		html {
+			font-size: 14px;
+		}
 		p.text{
 		float:none;
 		width:100%;
@@ -112,13 +124,16 @@ ul.menu>li:hover{
 		 width:50%;
 		}
 
+		main, footer {
+			padding-top: 100px;
+		}
+
 		ul.menu>li:hover ul.submenu{
 			width:200vw;
+			font-size:0.8rem;
 			position:absolute;
 			left:0px;
 			top:3.0rem;
-			border-top:2px solid gray;
-			border-bottom:2px solid gray;
 			background:black;
 		}
 
@@ -130,6 +145,12 @@ ul.menu>li:hover{
 	}
 	/* ce stil se aplica pentru width-ul ferestrei egal cu 400px? */
 	@media screen and (max-width:400px){
+		html {
+			font-size: 12px;
+		}
+		ul.menu>li, ul.menu>li>ul.submenu>li {
+			font-size:0.8rem;
+		}
 		p.text{
 			float:none;
 			width:100%;
