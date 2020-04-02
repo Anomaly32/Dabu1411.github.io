@@ -1,0 +1,28 @@
+html {
+	font-size: 12px;
+}
+main, footer{
+	padding-top:75px;
+}
+ul.menu>li, ul.menu>li>ul.submenu>li {
+	font-size:0.8rem;
+}
+p.text{
+	float:none;
+	width:100%;
+}
+figure.img-wrap{
+	width:100%;
+}
+
+#ga{
+	display: none;
+}
+
+#galerie_animata:after{
+	content: "Animatia nu merge pe mobil!";
+}
+
+div#gs{
+  grid-template-columns: auto;
+}

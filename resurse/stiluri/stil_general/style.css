@@ -4,8 +4,10 @@ body {
 
 h1, h2, h3,
 h4, h5, h6 {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	color: #332900;
 	background-color: #84CEEB;
 }
@@ -22,8 +24,13 @@ main, footer{
 	padding-top:50px;
 }
 
+footer{
+	padding-bottom: 50px;
+}
+
 html {
 	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 p ,aside {
@@ -48,9 +55,12 @@ p ,aside {
 
 /* MENU */
 nav{
-	width:100%;
-	position:fixed;
-}
+		width:100%;
+		position:fixed;
+    background: black;
+    height:3rem;
+    z-index:10;
+	}
 
 ul.menu>li, ul.menu>li>ul.submenu>li{
 	display:block;
@@ -89,16 +99,6 @@ ul.menu>li>ul.submenu{
 	top:0px;
 }
 
-ul.menu>li>ul.submenu>li
-{
-	border-top:2px solid gray;
-}
-
-ul.menu>li>ul.submenu>li:last-child
-{
-	border-bottom:2px solid gray;
-}
-
 ul.menu>li>a:hover, ul.submenu>li>a:hover{
 	background:gray;
 	transition: background 0s;
@@ -108,66 +108,158 @@ ul.menu>li:hover{
 	overflow:visible;
 }
 
-@media screen and (min-width:400px) and (max-width:700px){
-		html {
-			font-size: 14px;
-		}
-		p.text{
-		float:none;
-		width:100%;
-		}
-		figure.img-wrap{
-		width:100%;
-		}
+img.mica{
+	max-width: 100%;
+	height: auto;
+	max-height: 260px;
+}
 
-		ul.menu>li{
-		 width:50%;
-		}
+img.mare{
+	max-width: 100%;
+	height: auto;
+	max-height: 520px;
+}
 
-		main, footer {
-			padding-top: 100px;
-		}
+div#gs {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-row-gap:1.0em;
+	grid-column-gap:1.0em;
+}
 
-		ul.menu>li:hover ul.submenu{
-			width:200vw;
-			font-size:0.8rem;
-			position:absolute;
-			left:0px;
-			top:3.0rem;
-			background:black;
-		}
+#gs img{
+  width: 100%;
+}
 
-		ul.menu>li:hover ul.submenu>li{
-			float:left;
-			width:15%;
-			border:none;
-		}
+#gs figcaption{
+  text-align:center;
+}
+
+#gs>figure:nth-child(5) {
+	grid-area: 2/3/3/4
+}
+
+#gs>figure:nth-child(6) {
+	grid-area: 3/1/4/2
+}
+
+#gs>figure:nth-child(7) {
+	grid-area: 3/3/4/4
+}
+
+#gs>figure:nth-child(8) {
+	grid-area: 4/1/5/2
+}
+
+#gs>figure:nth-child(9) {
+	grid-area: 4/2/5/3
+}
+
+#gs>figure:nth-child(10) {
+	grid-area: 4/3/5/4
+}
+
+#gs>figure:hover {
+  box-shadow: grey 0px 0px 7px;
+	transform: scale(1.05, 1.05);
+}
+
+#gs figure{
+  transition: all 0.5s linear;
+}
+
+#ga{
+	position:relative;
+	border:1px solid black;
+  width:350px;
+  height:200px;
+  overflow:hidden;
+}
+
+#ga figure{
+	width:350px;
+	height:200px;
+	position:absolute;
+	left:0;
+	top:0;
+	animation-name:fade_and_scale;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-duration:30s;
+	transform:scale(1);
+}
+
+@keyframes fade_and_scale{
+	0% {
+		z-index:5;
+		opacity:1;
 	}
-	/* ce stil se aplica pentru width-ul ferestrei egal cu 400px? */
-	@media screen and (max-width:400px){
-		html {
-			font-size: 12px;
-		}
-		ul.menu>li, ul.menu>li>ul.submenu>li {
-			font-size:0.8rem;
-		}
-		p.text{
-			float:none;
-			width:100%;
-		}
-		figure.img-wrap{
-			width:100%;
-		}
+	3.33% {
+		opacity:1;
+		transform: scale(1);
 	}
+	6.66% {
+		opacity:1;
+		transform: scale(0.75);
+	}
+	9.99% {
+		z-index:5;
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	10% {
+		z-index: -1;
+		opacity
+	}
+	89.99% {
+		z-index: -1;
+		opacity: 1;
+		transform: scale(1);
+	}
+	90%{
+		z-index: 0;
+	}
+	100%{
+		z-index: 0;
+		opacity: 1;
+	}
+}
 
-	img.mica{
-		max-width: 100%;
-		height: auto;
-		max-height: 36vh;
-	}
+#ga figure:nth-of-type(10){
+	animation-delay:0s;
+}
+#ga figure:nth-of-type(9){
+	animation-delay:3s;
+}
+#ga figure:nth-of-type(8){
+	animation-delay:6s;
+}
+#ga figure:nth-of-type(7){
+	animation-delay:9s;
+}
+#ga figure:nth-of-type(6){
+	animation-delay:12s;
+}
+#ga figure:nth-of-type(5){
+	animation-delay:15s;
+}
+#ga figure:nth-of-type(4){
+	animation-delay:18s;
+}
+#ga figure:nth-of-type(3){
+	animation-delay:21s;
+}
+#ga figure:nth-of-type(2){
+	animation-delay:24s;
+}
+#ga figure:nth-of-type(1){
+	animation-delay:27s;
+}
 
-	img.mare{
-		max-width: 100%;
-		height: auto;
-		max-height: 72vh;
-	}
+#ga figcaption{
+	position:absolute;
+	bottom:0;
+	background:rgba(255,255,255,0.7);
+	width:100%;
+	text-align:center;
+}
