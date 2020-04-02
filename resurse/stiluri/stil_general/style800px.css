@@ -4,7 +4,7 @@ html {
 main, footer{
 	padding-left:5%;
 	padding-right:5%;
-	padding-top:50px;
+	padding-top: 6rem;
 }
 p.text{
 float:none;
@@ -24,7 +24,7 @@ main, footer {
 
 ul.menu>li:hover ul.submenu{
 	width:200vw;
-	font-size:0.8rem;
+	font-size: 0.8rem;
 	position:absolute;
 	left:0px;
 	top:3.0rem;
