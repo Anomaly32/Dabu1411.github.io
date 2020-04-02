@@ -70,14 +70,13 @@ p ,aside {
 	display:inline-block;
 }
 
-#biliografie {
+.link_bibliografie {
+	display:inline-block;
 	position: absolute;
+	top: 0rem;
 	right: 2rem;
 	font-size: 0.8rem;
 	line-height: 3rem;
-}
-
-.link_bibliografie {
 	text-decoration:none;
 	color: #5AB9EA;
 }
