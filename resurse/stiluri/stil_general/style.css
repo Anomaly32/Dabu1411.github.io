@@ -149,6 +149,8 @@ img.mare{
 
 /* TABEL */
 table{
+	table-layout: auto;
+	width: 100%;
 	border: 2px solid black;
 	border-collapse:collapse;
 }
