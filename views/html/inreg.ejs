@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "ro">
+	<head>
+		<title> Game Corner </title>
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon/./favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="/css/css_general/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/css_general/style800px.css" media="screen and (max-width: 800px)">
+		<link rel="stylesheet" type="text/css" href="/css/css_general/style400px.css" media="screen and (max-width: 400px)">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="author" content="Dabu Alexandru">
+		<meta name="description" content="Pagina principala a platformei de jocuri Game Corner">
+		<meta name="keywords" content="Game Corner, comunitate, platforma, jocuri, ce e nou, comportament">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+		<%-  include('../fragmente/header')  %>
+
+		<main>
+			<section>
+				<div class="afisaj">
+	        <h1>Inregistrare</h1>
+					<% if(!locals.rsstatus) { %><!-- verific daca status e definit-->
+					<form class="date" method="post" enctype="multipart/form-data" action="/inreg">
+						<label class = "text">
+							Username: <input type="text" name="username" value="user">
+						</label>
+
+						<label class = "text">
+							Parola: <input type="password" name="parola" value="pass">
+						</label>
+
+						<label class = "text">
+							Confirma parola: <input type="password" name="repeta parola:" value="re-pass">
+						</label>
+
+						<label class = "text">
+							Email: <input type="email" name="email" value="email@example.ex">
+						</label>
+
+						<label class = "text">
+							Preferinte tipuri de jocuri(cu virgula): <input type="text" name="preferinte" value="" size="50">
+						</label>
+
+						<label class = "number">
+							Numar ore de joc zilnic(intre 0 si 20): <input type="number" id="ore" name="nrOreJoc" min="0" max="20">
+						</label>
+
+						<label class = "radio">
+							<br/> <br/> Tip de gamer: <br/>
+							<input type="radio" id="ocazional" name="tipGamer" value="ocazional"> Ocazional <br/>
+						</label>
+						<label class = "radio">
+							<input type="radio" id="tryhard" name="tipGamer" value="try-hard"> Try-hard <br/>
+						</label>
+						<label class = "radio">
+							<input type="radio" id="profesie" name="tipGamer" value="de profesie"> Gamer de profesie <br/> <br/>
+						</label>
+
+
+						<div>
+							<input type="submit" value="Submit">
+						</div>
+
+					</form>
+					<% } else if(rsstatus=="ok"){ %>
+						<p>Date introduse</p>
+					<% } else {%>
+						<p>Eroare</p>
+					<% } %>
+		    </div>
+			</section>
+		</main>
+
+		<%-  include('../fragmente/footer')  %>
+
+	</body>
+</html>

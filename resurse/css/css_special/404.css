@@ -1,0 +1,21 @@
+
+div.eroare{
+  font-size:50px;
+  text-align:center;
+  color: #5AB9EA;
+	background:black;
+  border: 6px solid #5AB9EA;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+div.text{
+  font-size:35px;
+}

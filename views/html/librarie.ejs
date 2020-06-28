@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "ro">
+	<head>
+		<title> Game Corner </title>
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon/./favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="/css/css_general/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/css_general/style800px.css" media="screen and (max-width: 800px)">
+		<link rel="stylesheet" type="text/css" href="/css/css_general/style400px.css" media="screen and (max-width: 400px)">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="author" content="Dabu Alexandru">
+		<meta name="description" content="submeniu al paginii 'home', care cuprinde libraria de jocuri, unde putem cauta achizitiile dupa tag, data lansarii sau categorie">
+		<meta name="keywords" content="joci, jocuri, librarie, cumparate, lista, achizitii, tag, categorii">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/ejs.min.js"></script>
+		<script src="js/lista.js"></script>
+	</head>
+
+	<body>
+
+		<%-  include('../fragmente/header')  %>
+
+		<main>
+			<h1> Game Corner </h1>
+			<p> Ce vrei sa joci astazi? </p>
+			<section>
+				<h2> Ce este zona de "librarie"? </h2>
+				<p> Zona unde veti putea gasi jocurile cumparate. Aici va puteti consulta lista de achizitii in momente de plictiseala sau atunci cand aveti pofta de a juca un joc cumparat acum mult timp, dar inca nejucat. </p>
+				<p> <strong> DIN PACATE, ACEASTA PAGINA ESTE INCA IN CONSTRUCTIE, DEOARECE NECESITA MAI MULTE ELEMENTE </strong> </p>
+			</section>
+
+			<section>
+				<h2> In ce maniera veti putea vizualiza lista de jocuri? </h2>
+				<p> Jocurile vor putea fi cautate dupa diverse tag-uri, cum ar fi: pret, data lansarii, categorii/tipuri de jocuri. </p>
+				<p> <strong> Motorul de cautare este inca in lucru!!! </strong> </p>
+			</section>
+
+			<section>
+				<h2> Lista de jocuri </h2>
+				<p> Desi nu exista o librarie, iti aratam acum o lista cu jocuri pe care noi le-am gasit a fi intersante. </p>
+				<div id = "div_spec">
+					<ol id = "lista_spec">
+						<li> Soma </li>
+						<li> Rocket League </li>
+						<li> Doom: Eternal </li>
+						<li> Fallout 4 </li>
+						<li> Train Simulator </li>
+						<li> Witcher 3 </li>
+						<li> Diablo III </li>
+						<li> Shovel Knight: King of Cards </li>
+						<li> Monster Hunter: World - Iceborne (Deluxe edition) </li>
+						<li> Cyberpunk 2077 </li>
+					</ol>
+				</div>
+				<form id = "radio">
+				  <p>Selecteaza tip de lista:</p>
+				  <input type="radio" id="cifre_arabe" name="tip_lista" value="cifre arabe">
+				  <label for="male">Cifre arabe</label><br>
+				  <input type="radio" id="litere_mari" name="tip_lista" value="litere mari">
+				  <label for="female">Litere mari</label><br>
+				  <input type="radio" id="litere_mici" name="tip_lista" value="litere mici">
+				  <label for="other">Litere mici</label><br>
+					<input type="radio" id="cifre_romane" name="tip_lista" value="cifre romane">
+				  <label for="other">Cifre romane</label>
+			</section>
+		</main>
+
+		<%-  include('../fragmente/footer')  %>
+
+	</body>
+</html>

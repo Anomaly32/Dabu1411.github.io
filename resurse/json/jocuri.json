@@ -1,0 +1,176 @@
+{
+  "lastId": 19,
+  "jocuri": [
+    {
+      "id": 0,
+      "nume": "Doom: Eternal",
+      "descriere": "First-person shooter in care trebuie sa ucizi sute de demoni.",
+      "pret": 59.99,
+      "R15": "Da",
+      "dataLansare": "2020-03-20",
+      "tags": "Action, Gore, Violence, Shooter"
+    },
+    {
+      "id": 1,
+      "nume": "Rocket League",
+      "descriere": "Joc cu masini care joaca fotbal cu o minge gigantica.",
+      "pret": 24.99,
+      "R15": "Nu",
+      "dataLansare": "2015-06-07",
+      "tags": "Multiplayer, Football, Co-op, Team-Based"
+    },
+    {
+      "id": 2,
+      "nume": "Artificial extinction",
+      "descriere": "Ai 9 zile la dispozitie sa gasesti un loc sigur de aterizare pe o planeta ostila.",
+      "pret": 16.79,
+      "R15": "Da",
+      "dataLansare": "2020-03-13",
+      "tags": "Action, Indie, Adventure, Strategy"
+    },
+    {
+      "id": 3,
+      "nume": "Fallout 4",
+      "descriere": "Revolutia in lumea open-world-urilor, o gura de aer in materie de shooter si aventura.",
+      "pret": 19.99,
+      "R15": "Da",
+      "dataLansare": "2015-11-10",
+      "tags": "Open World, Post-apocalyptic, Exploration, Adventure, Shooter"
+    },
+    {
+      "id": 4,
+      "nume": "Train simulator",
+      "descriere": "Urca in tren si invata cum e lumea pe sine.",
+      "pret": 29.99,
+      "R15": "Nu",
+      "dataLansare": "2009-06-12",
+      "tags": "Simulation, Trains, Singleplayer, Driving"
+    },
+    {
+      "id": 5,
+      "nume": "Witcher 3",
+      "descriere": "Pleaca in cautarea fiicei tale disparute intr-o lume fantastica",
+      "pret": 26.99,
+      "R15": "Da",
+      "dataLansare": "2015-05-18",
+      "tags": "Open World, RPG, Story Rich, Atmospheric"
+    },
+    {
+      "id": 6,
+      "nume": "Doom",
+      "descriere": "Salveaza statia de cercetare de pe Marte de demoni. Pentru asta ai fost activat.",
+      "pret": 19.99,
+      "R15": "Da",
+      "dataLansare": "2016-05-13",
+      "tags": "Action, Gore, Violence, Shooter"
+    },
+    {
+      "id": 7,
+      "nume": "Rocket Teams",
+      "descriere": "Construieste rachete pe care sa le lansezi in spatiu alaturi de prieteni si concurati pentru suprematie.",
+      "pret": 12.59,
+      "R15": "Nu",
+      "dataLansare": "2012-01-03",
+      "tags": "Multiplayer, Simulation, Team-Based"
+    },
+    {
+      "id": 8,
+      "nume": "Space League",
+      "descriere": "Concureaza pentru suprematie in sistemul tau solar si avanseaza pentru a explora spatiul.",
+      "pret": 22.49,
+      "R15": "Nu",
+      "dataLansare": "2017-10-10",
+      "tags": "Multiplayer, Spaceship, Open World, Adventure, Strategy"
+    },
+    {
+      "id": 9,
+      "nume": "Jumpin 2",
+      "descriere": "Urca pe noi culmi in acest joc si aventureaza-te in nenumaratele zone de explorat, dar ai grija cum iti folosesti resursele.",
+      "pret": 13.99,
+      "R15": "Nu",
+      "dataLansare": "2019-01-23",
+      "tags": "Platformer, Adventure, Strategy, Survival"
+    },
+    {
+      "id": 10,
+      "nume": "Car racing ultimate",
+      "descriere": "Sari la volan si apasa pedala in noua ta masina.",
+      "pret": 11.99,
+      "R15": "Nu",
+      "dataLansare": "2019-01-23",
+      "tags": "Simulation, Car, Racing, Driving"
+    },
+    {
+      "id": 11,
+      "nume": "Wizardy II",
+      "descriere": "Strabate taramul magic al Norlandiei si castiga respectul locuitorilor din Rastalow.",
+      "pret": 13.99,
+      "R15": "Da",
+      "dataLansare": "2017-10-10",
+      "tags": "Open World, RPG, Story Rich, Atmospheric, Fantasy"
+    },
+    {
+      "id": 12,
+      "nume": "Diablo III",
+      "descriere": "Lupta pentru cetatenii Sanctuarului si calatoreste prin rai si prin infern in acest joc de actiune si role-play.",
+      "pret": 39.99,
+      "R15": "Da",
+      "dataLansare": "2012-05-15",
+      "tags": "Action, RPG, Violence, Dungeon crawl, Hack and slash"
+    },
+    {
+      "id": 13,
+      "nume": "Ultimate Adventure",
+      "descriere": "Aventureaza pe pamantul sacru al Federatiei si lupta pentru patrie.",
+      "pret": 18.99,
+      "R15": "Da",
+      "dataLansare": "2016-03-03",
+      "tags": "Adventure, Action, Open World"
+    },
+    {
+      "id": 14,
+      "nume": "Soma",
+      "descriere": "Descopera ce se intampla in lumea in care tocmai te-ai trezit si gaseste scaparea din singuratatea abisala.",
+      "pret": 35.49,
+      "R15": "Da",
+      "dataLansare": "2015-09-22",
+      "tags": "Horror, Story Rich, Atmospheric, Sci-fi"
+    },
+    {
+      "id": 15,
+      "nume": "Operation: Unlimited Sesion",
+      "descriere": "Lupta alaturi de camarazii tai pentru a indeplini cerintele date de Federatie. Castiga credite si urca in clasament.",
+      "pret": 9.99,
+      "R15": "Da",
+      "dataLansare": "2020-01-01",
+      "tags": "Strategy, Team-Based, Simulation, Adventure"
+    },
+    {
+      "id": 16,
+      "nume": "Train simulator",
+      "descriere": "Urca in tren si invata cum e lumea pe sine.",
+      "pret": 29.99,
+      "R15": "Nu",
+      "dataLansare": "2009-06-12",
+      "tags": "Simulation, Trains, Singleplayer, Driving"
+    },
+    {
+      "id": 17,
+      "nume": "Witcher 3",
+      "descriere": "Pleaca in cautarea fiicei tale disparute intr-o lume fantastica",
+      "pret": 26.99,
+      "R15": "Da",
+      "dataLansare": "2015-05-18",
+      "tags": "Open World, RPG, Story Rich, Atmospheric"
+    },
+    {
+      "id": 18,
+      "nume": "Doom",
+      "descriere": "Salveaza statia de cercetare de pe Marte de demoni. Pentru asta ai fost activat.",
+      "pret": 19.99,
+      "R15": "Da",
+      "dataLansare": "2016-05-13",
+      "tags": "Action, Gore, Violence, Shooter"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+<header>
+	<nav>
+		<ul class="menu">
+			<li><a href="/">Home</a></li>
+			<li><a href="/jocuri">Jocuri</a></li>
+			<li>
+				<div>Pentru tine</div>
+				<ul class="submenu">
+					<li><a href="/librarie">Librarie</a></li>
+					<li><a href="/noutati">Noutati</a></li>
+					<li><a href="/magazin">Magazin</a></li>
+				</ul>
+			</li>
+			<li>
+				<div>Oferte</div>
+				<ul class="submenu">
+					<li><a href="/promotii">Promotii</a></li>
+					<li><a href="/coming_soon">Coming Soon</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="logare">
+		<% if (!locals.username) { %>
+		<form class="date" method="post" enctype="multipart/form-data" action="/login">
+			<div class="input">
+				<label>
+					User: <input type="text" name="username" value="">
+				</label>
+			</div>
+			<div class="input">
+				<label>
+					Parola: <input type="password" name="parola" value="">
+				</label>
+			</div>
+			<div class="login">
+				<input type="submit" value="login">
+			</div>
+			<p> <a href="/inreg">Nu aveti cont. Inregistrare.</a></p>
+		</form>
+		<% } else { %>
+		E logat: <%= locals.username %> <br/>
+		<a href="/logout">Logout</a>
+		<% } %>
+	</div>
+<hr/>
+</header>
