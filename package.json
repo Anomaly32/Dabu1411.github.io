@@ -23,7 +23,7 @@
   "homepage": "https://github.com/Anomaly32/Dabu1411.github.io#readme",
   "dependencies": {
     "ejs": "^3.1.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.17.1",
     "formidable": "^1.2.2"
   }
